@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="#1| 2+2=?"/>
+            <RadioButton x:Name="radiobtn" GroupName="test1" Content="4"/>
+            <RadioButton x:Name="radiobtn2" GroupName="test1" Content="5"/>
+            <RadioButton x:Name="radiobtn11" GroupName="test1" Content="6"/>
+            <RadioButton x:Name="radiobtn12" GroupName="test1" Content="7"/>
+            <TextBlock Text="#2| 2+2*2=?"/>
+            <RadioButton x:Name="radiobtn3" GroupName="test2" Content="4"/>
+            <RadioButton x:Name="radiobtn4" GroupName="test2" Content="5"/>
+            <RadioButton x:Name="radiobtn23" GroupName="test2" Content="6"/>
+            <RadioButton x:Name="radiobtn24" GroupName="test2" Content="8"/>
+            <TextBlock Text="#3| число Пи=?"/>
+            <RadioButton x:Name="radiobtn5" GroupName="test3" Content="3.14"/>
+            <RadioButton x:Name="radiobtn6" GroupName="test3" Content="2.14"/>
+            <RadioButton x:Name="radiobtn35" GroupName="test3" Content="5"/>
+            
+            <RadioButton x:Name="radiobtn36" GroupName="test3" Content="3"/>
+            <TextBlock Text="#4| 8 800 555 35-??"/>
+            <RadioButton x:Name="radiobtn7" GroupName="test4" Content="55"/>
+            <StackPanel>
+                <RadioButton x:Name="radiobtn8" GroupName="test4" Content="35">
+                    <RadioButton.ToolTip>
+                        <ToolTip Background="#60AA4030" Foreground="White" HasDropShadow="False"
+                            Placement="Relative" HorizontalOffset="15" VerticalOffset="10">
+                            <StackPanel>
+                                <TextBlock>правильно</TextBlock>
+                                
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+            </StackPanel>
+            <RadioButton x:Name="radiobtn47" GroupName="test4" Content="65"/>
+            <RadioButton x:Name="radiobtn48" GroupName="test4" Content="25"/>
+            <Button Content="Ответ" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
